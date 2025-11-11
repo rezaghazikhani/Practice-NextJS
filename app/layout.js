@@ -20,57 +20,49 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <header>
-          <div class="container header-content">
-            <div class="logo">RGK.code</div>
-            <nav>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        {children}
-          <footer>
+         <header class="main-header">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Best Sellers</a></li>
-                        <li><a href="#">Special Offers</a></li>
-                    </ul>
+            <a class="logo">RGK.code</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Who We Are</a></li>
+                    <li><a href="#skills">Online Stores</a></li>
+                    <li><a href="#acquaintances">Acquaintances</a></li>
+                    <li><a href="#history">Our History</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+        {children}
+         <footer id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For collaboration and a free consultation, get in touch with us.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@rgk.code">info@rgk.code</a>
                 </div>
-                
-                <div class="footer-section">
-                    <h3 class="footer-title">Customer Service</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Track Your Order</a></li>
-                        <li><a href="#">Buying Guide</a></li>
-                        <li><a href="#">Return Policy</a></li>
-                        <li><a href="#">FAQs</a></li>
-                    </ul>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+989937827724">+98 993 782 7724</a>
                 </div>
-                
-                <div class="footer-section">
-                    <h3 class="footer-title">Contact Info</h3>
-                    <ul class="footer-links">
-                        <li>123 Tech Street, San Francisco, CA</li>
-                        <li>Phone: (415) 555-0123</li>
-                        <li>Email: info@rgkcode.com</li>
-                    </ul>
+                 <div class="contact-item">
+                    <i class="fab fa-telegram-plane"></i>
+                    <a href="https://t.me/reza_ghazi_696" target="_blank">@yourusername</a>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2023 RGK.code. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
+            <p class="copyright">&copy; 2024 RGK.code. All Rights Reserved.</p>
         </div>
     </footer>
       </body>
